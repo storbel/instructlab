@@ -1,0 +1,156 @@
+version: 3
+domain: scc
+created_by: expert_cctp
+document_outline: |
+  Ce document couvre les CCTP (Cahier des Clauses Techniques Particulières) dans le contexte
+  français de la construction et des marchés publics. Il explique la définition, la structure,
+  le contenu obligatoire, les normes applicables, et les bonnes pratiques de rédaction.
+
+document:
+  repo: https://github.com/storbel/instructlab.git
+  commit: main
+  patterns:
+    - cctp.md
+
+seed_examples:
+  - context: |
+      Le CCTP (Cahier des Clauses Techniques Particulières) est un document contractuel
+      qui décrit précisément les spécifications techniques d'un projet. Il fait partie
+      des documents de consultation des entreprises (DCE) et devient contractuel une
+      fois le marché attribué.
+    questions_and_answers:
+      - question: C'est quoi exactement un CCTP ?
+        answer: |
+          Le CCTP, c'est le document qui détaille toutes les spécifications techniques
+          de ton projet. En gros, c'est là où tu expliques concrètement ce que tu veux :
+          les matériaux, les méthodes de travail, les normes à respecter. C'est un peu
+          la feuille de route technique pour les entreprises qui vont réaliser le projet.
+
+      - question: Quelle est la différence entre CCTP et CCAP ?
+        answer: |
+          Bonne question ! Le CCTP, c'est tout ce qui concerne la technique : matériaux,
+          mise en œuvre, normes. Le CCAP (Cahier des Clauses Administratives Particulières),
+          lui, s'occupe de l'administratif : délais, pénalités, assurances, modalités de
+          paiement. En résumé : CCTP = comment on fait, CCAP = comment on gère le projet.
+
+      - question: Qui rédige le CCTP ?
+        answer: |
+          C'est généralement le maître d'œuvre qui rédige le CCTP. Ça peut être un architecte,
+          un bureau d'études, ou un ingénieur selon le type de projet. Parfois, pour des
+          projets complexes, plusieurs spécialistes collaborent : un pour la structure,
+          un pour les fluides, etc.
+
+  - context: |
+      Le CCTP doit contenir plusieurs éléments obligatoires : la description détaillée
+      des travaux, les spécifications techniques des matériaux, les normes et règlements
+      applicables, les conditions d'exécution, et les critères de réception des ouvrages.
+    questions_and_answers:
+      - question: Qu'est-ce qu'on doit obligatoirement mettre dans un CCTP ?
+        answer: |
+          Il y a plusieurs éléments incontournables : d'abord, la description précise
+          des travaux à réaliser. Ensuite, les specs des matériaux (marques, normes,
+          qualité). Tu dois aussi mentionner toutes les normes à respecter, expliquer
+          comment les travaux doivent être exécutés, et définir les critères de réception.
+          N'oublie pas les plans et schémas en annexe !
+
+      - question: Comment organiser un CCTP ?
+        answer: |
+          Le mieux, c'est de suivre une structure logique par corps d'état. Tu commences
+          par une partie générale (présentation du projet, intervenants), puis tu détailles
+          chaque lot : gros œuvre, second œuvre, fluides, etc. Pour chaque lot, tu précises
+          les matériaux, la mise en œuvre, et les finitions. Pense à numéroter clairement
+          tes articles pour faciliter les références.
+
+      - question: Faut-il imposer des marques spécifiques dans un CCTP ?
+        answer: |
+          Attention là-dessus ! Dans les marchés publics, tu ne peux pas imposer une marque
+          unique, ça violerait les règles de la concurrence. Par contre, tu peux citer une
+          marque suivie de "ou équivalent", à condition de définir précisément ce qu'est
+          un équivalent acceptable. L'idée, c'est de donner une référence de qualité sans
+          bloquer la concurrence.
+
+  - context: |
+      Les normes techniques dans un CCTP peuvent être des normes NF, DTU (Documents
+      Techniques Unifiés), Eurocodes, ou certifications spécifiques. Il est essentiel
+      de citer les versions en vigueur au moment de la rédaction.
+    questions_and_answers:
+      - question: Quelles normes faut-il mentionner dans un CCTP ?
+        answer: |
+          Tu dois référencer toutes les normes pertinentes pour ton projet : les DTU
+          (c'est la base pour le bâtiment en France), les normes NF pour les matériaux,
+          les Eurocodes pour le calcul des structures si besoin. Pense aussi aux
+          certifications type NF, CE, ou labels environnementaux selon ton projet.
+          L'important, c'est de toujours préciser la version et la date.
+
+      - question: C'est quoi un DTU et pourquoi c'est important ?
+        answer: |
+          Les DTU, ce sont des Documents Techniques Unifiés qui décrivent les règles
+          de l'art pour la construction en France. En gros, c'est le mode d'emploi
+          officiel pour chaque type de travaux. Si tu veux être sûr que ton projet
+          soit bien assuré et conforme, tu dois t'y référer. Par exemple, il existe
+          des DTU pour la couverture, la plomberie, l'électricité, etc.
+
+      - question: Que faire si une norme change pendant le projet ?
+        answer: |
+          Bonne question, ça arrive ! En principe, ce sont les normes en vigueur au
+          moment de la signature du marché qui s'appliquent. Si une norme change en
+          cours de chantier, il faut généralement un avenant au marché pour l'intégrer,
+          surtout si ça impacte les coûts ou les délais. C'est pour ça qu'il faut
+          toujours dater les références normatives dans le CCTP.
+
+  - context: |
+      Le CCTP doit être cohérent avec les autres pièces du marché comme les plans,
+      le CCAP, et le bordereau de prix. En cas de contradiction, un ordre de priorité
+      des pièces est généralement défini dans le CCAP.
+    questions_and_answers:
+      - question: Comment éviter les contradictions entre CCTP et plans ?
+        answer: |
+          La clé, c'est de travailler en même temps sur le CCTP et les plans, et de
+          faire valider les deux ensemble. Vérifie systématiquement que chaque élément
+          décrit dans le CCTP apparaît sur les plans, et vice-versa. Un bon réflexe :
+          faire relire les deux documents par quelqu'un qui n'a pas participé à la
+          rédaction, il repérera plus facilement les incohérences.
+
+      - question: Qu'est-ce qui prime en cas de contradiction entre documents ?
+        answer: |
+          Normalement, c'est défini dans ton CCAP, mais en général l'ordre c'est :
+          l'acte d'engagement d'abord, puis le CCAP, ensuite le CCTP, et enfin les
+          plans. Mais honnêtement, il vaut mieux éviter ces situations ! Si tu detectes
+          une contradiction, clarifie-la tout de suite par avenant plutôt que de laisser
+          l'entreprise interpréter.
+
+      - question: Le CCTP doit-il mentionner les prix ?
+        answer: |
+          Non, jamais ! Les prix n'ont rien à faire dans le CCTP. C'est un document
+          purement technique. Les prix, c'est dans le bordereau de prix unitaires (BPU)
+          ou le devis quantitatif estimatif (DQE). Le CCTP décrit ce qu'on veut faire
+          techniquement, les autres documents disent combien ça coûte.
+
+  - context: |
+      Un bon CCTP doit être précis sans être restrictif, permettre la concurrence,
+      et anticiper les problèmes d'exécution. Il doit aussi prévoir les contrôles
+      et essais nécessaires à la réception des ouvrages.
+    questions_and_answers:
+      - question: Comment rendre un CCTP assez précis sans trop restreindre ?
+        answer: |
+          C'est tout l'art de l'exercice ! Tu dois donner des exigences de résultat
+          plutôt que d'imposer une méthode unique. Par exemple, au lieu de dire "pose
+          avec telle colle spécifique", dis "pose garantissant tel niveau d'adhérence,
+          conforme au DTU X". Comme ça, tu laisses l'entreprise proposer sa solution
+          tout en garantissant le résultat. Définis des performances, pas des produits.
+
+      - question: Quels contrôles prévoir dans un CCTP ?
+        answer: |
+          Ça dépend de ton projet, mais pense aux essais classiques : tests d'étanchéité,
+          contrôles dimensionnels, vérifications électriques, tests de performance
+          thermique ou acoustique si pertinent. Précise qui fait les tests, à quelle
+          fréquence, et les critères d'acceptation. N'oublie pas de prévoir qui paie
+          ces contrôles dans ton budget !
+
+      - question: Doit-on prévoir des variantes dans le CCTP ?
+        answer: |
+          Tu peux autoriser des variantes, c'est même souvent intéressant pour avoir
+          des solutions alternatives. Si tu les autorises, définis bien le cadre dans
+          le CCTP : sur quels éléments, avec quelles contraintes minimales. Les
+          entreprises devront alors proposer leur offre de base conforme au CCTP,
+          et éventuellement une ou plusieurs variantes. C'est toi qui choisis ensuite.
